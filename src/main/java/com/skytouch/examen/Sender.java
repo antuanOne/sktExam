@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class Sender implements CommandLineRunner {
 
-    @Value("${counter}")
+    @Value("${counter:2}")
     private int counter;
 
     private final RabbitTemplate rabbitTemplate;
